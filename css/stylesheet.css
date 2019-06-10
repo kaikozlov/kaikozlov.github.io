@@ -75,7 +75,8 @@ a.title {
 	letter-spacing: 1px;
 	font-family: 'VOXI-Semibold';
 	font-size: 35px;
-	color: white;
+  color: white;
+  text-align: center;
 }
 
 a:hover {
@@ -97,9 +98,8 @@ a:hover {
 }
 
 #title {
-  padding-bottom: 33px;
-  padding-top: 34px
 }
+
 #vid {
   position:fixed;
   min-width:135%;

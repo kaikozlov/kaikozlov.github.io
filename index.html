@@ -9,7 +9,7 @@
   <title>kai</title>
   <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   <video playsinline autoplay loop id="vid">
-    <source src="./misc/4.mp4" type="video/mp4">
+    <source id="vsrc" type="video/mp4">
     </source>
     <script>
       var video = document.currentScript.parentElement;
@@ -17,6 +17,9 @@
     </script>
   </video>
   <meta name="keywords" content="Kai,Kozlov,website,Kai Kozlov">
+  <script>
+      document.getElementById("vsrc").src = "./misc/" + Math.floor((Math.random() * 4) + 1) + ".mp4";
+  </script>
 </head>
 
 <body>
