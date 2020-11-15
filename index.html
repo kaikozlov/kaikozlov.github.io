@@ -1,30 +1,145 @@
+
+
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <link rel="stylesheet" href="animate.css">
+  
 
 <head>
-  <script src="./js/title.js"></script>
-  <meta name="description" content="kai kozlov" />
-  <link rel="icon" href="./favicon.ico" type="image/png">
-  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
-  <title>kai</title>
-  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-  <video playsinline autoplay loop id="vid">
-    <source src="./misc/5.mp4" type="video/mp4">
-    </source>
-    <script>
-      var video = document.currentScript.parentElement;
-      video.volume = 0.333;
-    </script>
-  </video>
-  <meta name="keywords" content="Kai,Kozlov,website,Kai Kozlov">
-</head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/fonts.min82cf82cf.css?e064fd2b">
+    <link rel="stylesheet" href="assets/css/master.minb503b503.css?c73b9766">
+    <link rel="stylesheet" href="assets/css/animation.min13161316.css?1654eebb">
+    <script data-ad-client="ca-pub-2591283932912422" async src="pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+    <link rel="icon" href="./favicon.ico" type="image/png">
 
-<body>
-  <div id="center">
-    <div id="title">
-      <a href="./docs" class="title">kai</a>
+
+<!-- javascripts-->
+<script src="core.js"></script>
+<script src="cdn.jsdelivr.net/npm/typeit%407.0.4/dist/typeit.min.js"></script>
+<script type="text/javascript" src="js/AnimatedTitle.js"></script>
+<script type="text/javascript" src="js/app.html"></script>
+<script type="text/javascript" src="js/BlockInspect.js"></script>
+<script type="text/javascript" src="js/codesecure.js"></script>
+<script type="text/javascript" src="js/codesecure2.js"></script>
+<script type="text/javascript" src="js/j.query.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/magic.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/dateTime.js"></script>
+
+  </head>
+  <body>
+    <iframe allow="autoplay" id="audio" src="assets/audio/silence.html" style="display:none"></iframe>
+    <video autoplay class="fadeIn" disablePictureInPicture disableRemotePlayback id="vid" loop playsinline>
+      <source src="assets/media/4.mp4" type="video/mp4" />
+      <script type="text/javascript">
+        const video = document.currentScript.parentElement;
+        video.volume = 0.15;
+
+        function pause_resume() {
+          const button = document.getElementById("pause_resume_button");
+
+          if (video.paused) {
+            video.play()
+            button.textContent = "resume video";
+          } else {
+            video.pause()
+            button.textContent = "pause video";
+          }
+        }
+      </script>
+    </video>
+
+    <div class="font-right-bottom animated fadeInUp">
+      <a style="font-size:0.9em;" class="font-bold font-white" href="javascript:void(0);" onclick="pause_resume()">pause video</a>
+      <br>
     </div>
-  </div>
-</body>
+  </body>
+
+  <div class="container">
+	<div class="glitch" data-text="kai">kai</div>
+	<div class="font-left-bottom">
+	
+	
+	 
+ </div>
+ 
+  <div class="1">
+	<p id="einz" style="color: rgb(255, 255, 255);">
+	<!--marquee direction="right" speed="1" onmouseover="this.stop();" onmouseout="this.start();"-->
+	[ <a id="einz" href="https://discord.gg/ZfbakHTw5s" target="blank" rel=noopener>discord</a> / 
+	<a id="einz" href="https://steamcommunity.com/id/kaitk" target="blank" rel=noopener>steam</a> /
+	<a id="einz" href="https://www.twitch.tv/kaiitk" target="blank" rel=noopener>twitch</a> /
+	<a id="einz" href="https://github.com/kaikozlov" target="blank" rel=noopener>github</a> ]
+	<br><br>	
+  <!--/marquee-->
+  
+  <a id="date" class="font-light font-white no-margin"></a>
+  <hr>
+  <a class="toggle"style="color:white" id="app"></a>
+
+
+
+
+<script>
+
+  var app = document.getElementById('app');
+  
+  var typewriter = new Typewriter(app, {
+      loop: true
+  });
+  
+  typewriter.typeString('enraged?')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('wheres ur range kid')
+      .pauseFor(100)
+      .deleteChars(12)
+      .typeString('<strong>ur reach kid!</strong>')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('get good!')
+      .pauseFor(300)
+      .deleteAll()
+      .typeString('please let me out its cold in here..')
+      .pauseFor(500)
+      .deleteAll()
+      .typeString('virginity rocks')
+      .pauseFor(100)
+      .deleteAll()
+      .typeString('owning since 2018')
+      .pauseFor(100)
+      .deleteAll()
+      .typeString('its my year...')
+      .pauseFor(100)
+      .deleteAll()
+      .typeString('ur girl calls me daddy ;)')
+      .pauseFor(100)
+      .deleteAll()
+      .typeString('ur server downed')
+      .pauseFor(100)
+      .deleteAll()
+      .start();
+      
+  </script>
+
+
+
+
+
+  
+  <div class="font-left animated fadeInDown">
+
+    </div>
+    <div class="font-left-bottom animated fadeInUp">
+      <p id="einz" style="color: rgb(255, 255, 255);">
+        <div id="time"class="font-light font-white no-margin"></div>
+
+      <p style="font-size: 0.9em;" class="font-light font-white no-margin">&copy; kaikozlov.com 2020</p>
+      <noscript><p style="font-size: 0.9em;" class="font-light font-white no-margin">JavaScript is disabled, website may not function as intended.</p></noscript>
+      <br>
+    </div>
+
 
 </html>

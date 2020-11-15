@@ -1,9 +1,0 @@
-User-Agent: *
-Disallow: /bio.html
-Disallow: /index.html
-Disallow: /404.html
-Disallow: /google7d6017ce352077c9.html
-Disallow: /docs/index.html
-Disallow: /c1fb354c32f4.html
-Disallow: 
-Allow: /

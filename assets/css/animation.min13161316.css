@@ -1,0 +1,301 @@
+body{
+    overflow:hidden
+}
+
+#container {
+    width: 100vw;
+    height: 0vh;
+    text-align: center;
+    overflow: hidden;
+    }
+
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      
+      .animated.infinite {
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+      }
+      
+      .animated.hinge {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+      }
+      
+      .animated.flipOutX,
+      .animated.flipOutY,
+      .animated.bounceIn,
+      .animated.bounceOut {
+        -webkit-animation-duration: .75s;
+        animation-duration: .75s;
+      }
+      .animated.flip {
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+        -webkit-animation-name: flip;
+        animation-name: flip;
+      }
+.container{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      
+      }
+      .glitch {
+      color: rgb(218, 218, 218);
+      font-size: 100px;
+      z-index: 1;
+        position: relative;
+      }
+      
+      @keyframes noise-anim {
+      0% {
+      clip-path: inset(87% 0 4% 0);
+      }
+      5% {
+      clip-path: inset(3% 0 43% 0);
+      }
+      10% {
+      clip-path: inset(82% 0 4% 0);
+      }
+      15% {
+      clip-path: inset(41% 0 2% 0);
+      }
+      20% {
+      clip-path: inset(96% 0 5% 0);
+      }
+      25% {
+      clip-path: inset(57% 0 35% 0);
+      }
+      30% {
+      clip-path: inset(78% 0 4% 0);
+      }
+      35% {
+      clip-path: inset(100% 0 1% 0);
+      }
+      40% {
+      clip-path: inset(99% 0 1% 0);
+      }
+      45% {
+      clip-path: inset(46% 0 49% 0);
+      }
+      50% {
+      clip-path: inset(16% 0 8% 0);
+      }
+      55% {
+      clip-path: inset(16% 0 72% 0);
+      }
+      60% {
+      clip-path: inset(19% 0 80% 0);
+      }
+      65% {
+      clip-path: inset(8% 0 9% 0);
+      }
+      70% {
+      clip-path: inset(88% 0 6% 0);
+      }
+      75% {
+      clip-path: inset(32% 0 30% 0);
+      }
+      80% {
+      clip-path: inset(46% 0 47% 0);
+      }
+      85% {
+      clip-path: inset(78% 0 21% 0);
+      }
+      90% {
+      clip-path: inset(60% 0 9% 0);
+      }
+      95% {
+      clip-path: inset(48% 0 49% 0);
+      }
+      100% {
+      clip-path: inset(23% 0 64% 0);
+      }
+      }
+      .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 2px;
+      text-shadow: -1px 0 rgb(235, 235, 235);
+      top: 0;
+      overflow: hidden;
+      animation: noise-anim 2s infinite linear alternate-reverse;
+      }
+      
+      @keyframes noise-anim-2 {
+      0% {
+      clip-path: inset(19% 0 72% 0);
+      }
+      5% {
+      clip-path: inset(6% 0 35% 0);
+      }
+      10% {
+      clip-path: inset(32% 0 35% 0);
+      }
+      15% {
+      clip-path: inset(97% 0 3% 0);
+      }
+      20% {
+      clip-path: inset(19% 0 57% 0);
+      }
+      25% {
+      clip-path: inset(85% 0 16% 0);
+      }
+      30% {
+      clip-path: inset(46% 0 46% 0);
+      }
+      35% {
+      clip-path: inset(83% 0 15% 0);
+      }
+      40% {
+      clip-path: inset(66% 0 18% 0);
+      }
+      45% {
+      clip-path: inset(90% 0 8% 0);
+      }
+      50% {
+      clip-path: inset(58% 0 34% 0);
+      }
+      55% {
+      clip-path: inset(38% 0 61% 0);
+      }
+      60% {
+      clip-path: inset(93% 0 6% 0);
+      }
+      65% {
+      clip-path: inset(4% 0 83% 0);
+      }
+      70% {
+      clip-path: inset(57% 0 38% 0);
+      }
+      75% {
+      clip-path: inset(97% 0 4% 0);
+      }
+      80% {
+      clip-path: inset(9% 0 57% 0);
+      }
+      85% {
+      clip-path: inset(7% 0 82% 0);
+      }
+      90% {
+      clip-path: inset(14% 0 54% 0);
+      }
+      95% {
+      clip-path: inset(94% 0 6% 0);
+      }
+      100% {
+      clip-path: inset(9% 0 49% 0);
+      }
+      }
+      .glitch::before {
+      content: attr(data-text);
+      position: absolute;
+      left: -2px;
+      text-shadow: 1px 0 rgb(212, 26, 188);
+      top: 0;
+      color: rgb(33, 28, 34);
+      overflow: hidden;
+      animation: noise-anim-2 15s infinite linear alternate-reverse;
+      
+      }
+ #einz
+      {
+          text-align: center;
+          font-weight: normal;
+          font-family: 'Courier', sans-serif;
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0,0,0,100), 1px 1px 1px rgba(0,0,0,100);
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 12px;
+      }
+      
+.transformation{
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%)
+}
+.font-light{
+    font-family:Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;font-style:normal;font-weight:400
+}
+.font-bold
+
+{font-family:Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+    font-style:normal;font-weight:700;
+    text-decoration:none
+}
+.font-white{
+    color:#fff
+}
+.font-left
+{
+    position:absolute;
+    left:1%;
+    top:1%;
+    text-align:left
+}
+.font-right-bottom
+{
+    position:absolute;
+    right:1%;
+    bottom:1%;
+    text-align:right
+}
+.font-left-bottom{
+
+    position:absolute;
+    left:1%;
+    bottom:1%;
+    text-align:left}
+
+    .font-mid{
+        position:absolute;
+        left:50%;
+        top:50%;
+        text-align:center
+    }
+    .no-margin{
+        margin:0;
+        padding:0
+    }
+    #vid{
+        position:fixed;
+        min-width:100%;
+        min-height:100%;
+        opacity:1;
+        width:auto;
+        height:auto;
+        z-index:-100;
+        transform:translateX(-50%) translateY(-50%);
+        background-size:cover;
+        overflow:hidden;
+        -webkit-filter:blur(15px);
+        -moz-filter:blur(15px);
+        -o-filter:blur(15px);
+        -ms-filter:blur(15px);
+        filter:blur(15px);
+        background:#070915;background:rgba(7,9,21,.5);
+        filter:brightness(62.5%);
+        top:50%;left:50%
+    }
+        
+        a:hover{
+            color:#bb07ac;
+            letter-spacing:2px;transition: .5s}a{transition: .5s
+            
+            }
+
+            html{
+                background:#000
+            }
